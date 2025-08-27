@@ -1,0 +1,95 @@
+
+@font-face {
+    font-family: "BancoDoBrasilRegular";
+    src: url(../fonts/BancoDoBrasilTextos-Regular.ttf) format('truetype');
+}
+
+
+:root {
+    --rosa-cha: #FADADD;       /* substitui o verde-floresta */
+    --rosa-quartzo: #E7A6B1;   /* substitui o marrom-terra */
+    --rosa-palido: #FBEFF2;    /* substitui o bege-pelo */
+    --cinza-rosado: #D8C3C3;   /* substitui o cinza-pata */
+    --branco-neve: #FFFFFF;    /* substitui o azul-céu */
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--rosa-palido);
+    font-family: "BancoDoBrasilRegular", sans-serif;
+    color: var(--cinza-pata);
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: var(--rosa-cha);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Main content */
+main {
+    margin-top: 20px;
+}
+
+/* Botões temáticos */
+.btn-animal {
+    background-color: var(--rosa-cha);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 16px;
+}
+
+.btn-animal:hover {
+    background-color: var(--rosa-quartzo);
+    transform: scale(1.05);
+}
+
+/* Card de animal */
+.card-animal {
+    background-color: var(--rosa-palido);
+    border: 2px solid var(--rosa-quartzo);
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+    max-width: 300px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.card-animal:hover {
+    transform: scale(1.02);
+}
+
+.card-animal img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--rosa-cha);
+    margin-bottom: 10px;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+}
+
+a button {
+    margin-right: 10px;
+}
