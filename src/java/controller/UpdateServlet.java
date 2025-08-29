@@ -12,7 +12,7 @@ import java.util.List;
 public class UpdateServlet extends HttpServlet {
     
     @Override
-    protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("entrou na rota put do update");
         String id = request.getParameter("id");
         String raca = request.getParameter("raca");

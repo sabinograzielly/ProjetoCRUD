@@ -93,3 +93,72 @@ a {
 a button {
     margin-right: 10px;
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Estiliza a tabela */
+table {
+    width: 90%;
+    max-width: 1000px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: var(--branco-neve);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Cabeçalho da tabela */
+thead {
+    background-color: var(--rosa-cha);
+    color: white;
+}
+
+/* Células */
+td, th {
+    padding: 12px 16px;
+    text-align: center;
+    border-bottom: 1px solid var(--cinza-rosado);
+}
+
+/* Última linha sem borda */
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Botões dentro da tabela */
+td a button {
+    margin: 4px;
+}
+
+
+ main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .card-animal {
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .card-animal p {
+            margin: 12px 0;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        a button {
+            margin-top: 10px;
+            text-align: center;
+        }
